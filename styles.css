@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #4d4e53;
+}
+body > * {
+    display: inline-block;
+}
+#navbar{
+    height: 100%;
+    border-right: 3px solid #4d4e53;
+    width: 23%;
+    margin: 0px;
+    position: fixed;
+}
+#navbar h2{
+    text-align: center;
+    width: 95%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+#navbar ul{
+    width: 100%;
+    height: 85%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#navbar ul li{
+    display: flex;
+    width: 90%;
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 15px auto;
+}
+#navbar a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #4d4e53;
+}
+hr{
+    border: 1px solid 4d4e53;
+}
+section{
+    width: 76.7vw;
+    margin-left: 22vw;
+}
+script::before{
+    content: "<!--";
+}
+article{
+    margin: 30px;
+}
+p{
+    margin: 20px;
+}
+section ul{
+    margin-left: 50px;
+}
+section ul li{
+    margin-bottom: 15px;
+}
+code{
+        display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width: 855px ){
+    body > * {
+        display: block;
+    }
+    #navbar{
+        height: 250px;
+        border-right: 0px;
+        width: 100%;
+        margin: 0px;
+        position: relative;
+    
+    }
+    #firsthr{
+        border-top: 0px;
+    }
+    #navbar ul{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    #navbar h2{
+        text-align: center;
+        width: 95%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+    }
+    section{
+        width: 96vw;
+        margin: auto;
+    }
+    
+}
